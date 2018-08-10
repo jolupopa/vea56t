@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='css/font-awesome.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="plugins/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="plugins/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<title>VeaInmuebles!</title>
+</head>
+<body>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+			<li class="breadcrumb-item"><a href="listProperties.html">Listado de Propiedades</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Detalle</li>
+		</ol>
+	</nav>
+	<h1 class="text-center display-4">Detalle del Inmueble</h1>
+	<h2 class="text-center">Titulo del inmueble</h1>
+		<!-- slider-fotos-->
+		<section class="container mt-2">
+			<div class="row sombra">
+				<div class="col-md-6">
+					<div>
+						<a href="" data-toggle="modal" data-target="#sliderModal">
+							<div id="carouselExampleSlidesOnly" class="carousel slide py-3" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="images/properties/p1.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="images/properties/p2.jpg" alt="Second slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="images/properties/p3.jpg" alt="Third slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="images/properties/p4.jpg" alt="Third slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="images/properties/p5.jpg" alt="Third slide">
+									</div>
+								</div>
+							</div>
+						</a>	
+					</div>
+				</div>
+				<div class="d-none d-md-block col-md-6" style="overflow-y:scroll;max-height: 400px">
+					<div class="card-columns col-md-12 pt-3" id="galeria">
+					<!-- <div class="card">
+						<a href="" data-toggle="modal" data-target="#exampleModal">
+							<img src="images/properties/p2.jpg" class="card-img-top">
+						</a>
+					</div>
+				</div>
+				
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+						<img src="images/properties/p2.jpg" class="img-fluid rounded">
+					</div>
+				</div> -->
+
+			</div>		
+		</div>		
+	</section>
+	<section class="container my-5">
+		<div class="row sombra">
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Cras justo odio
+						<span class="badge badge-primary badge-pill">14</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Dapibus ac facilisis in
+						<span class="badge badge-primary badge-pill">2</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Morbi leo risus
+						<span class="badge badge-primary badge-pill">1</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Cras justo odio
+						<span class="badge badge-primary badge-pill">14</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Dapibus ac facilisis in
+						<span class="badge badge-primary badge-pill">2</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Morbi leo risus
+						<span class="badge badge-primary badge-pill">1</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Cras justo odio
+						<span class="badge badge-primary badge-pill">14</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Dapibus ac facilisis in
+						<span class="badge badge-primary badge-pill">2</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Morbi leo risus
+						<span class="badge badge-primary badge-pill">1</span>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</section>
+
+	<!-- tab-property -->
+	<section id="tab-property" class="container">
+		<div class="card text-center sombra my-5">
+			<div class="card-header">
+				<ul class="nav nav-tabs " id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Descripción</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="caracter-tab" data-toggle="tab" href="#caracter" role="tab" aria-controls="caracter" aria-selected="false">Caracteristicas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="comodo-tab" data-toggle="tab" href="#comodo" role="tab" aria-controls="comodo" aria-selected="false">Comodidades</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="plano-tab" data-toggle="tab" href="#plano" role="tab" aria-controls="plano" aria-selected="false">Planos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="location-tab" data-toggle="tab" href="#location" role="tab" aria-controls="location" aria-selected="false">Ubicación</a>
+					</li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+						Descripción <br>
+						Lorem1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-pane fade" id="caracter" role="tabpanel" aria-labelledby="caracter-tab">Caracteristicas <br>Lorem2 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-pane fade" id="comodo" role="tabpanel" aria-labelledby="comodo-tab">Comodidades <br>Lorem3 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						unt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+
+					<div class="tab-pane fade" id="plano" role="tabpanel" aria-labelledby="plano-tab">planos <br>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						unt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+
+					<div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">Videos <br>Lorem3 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						unt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+
+
+					<div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">Video <br> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-pane fade text-center" id="location" role="tabpanel" aria-labelledby="location-tab">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1974.8258571091785!2d-79.03088092868715!3d-8.136894032676343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1samancaez+mz+d+lt6+la+encalada+victor+larco!5e0!3m2!1ses!2spe!4v1531636739413" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer">
+				Trujillo 
+			</div>
+		</div>
+	</section><!-- tab-property -->
+	<!-- agente -->
+	<section id="agent" class="container">
+		<div class="row sombra">
+			<div class="col-md-4">
+				<img src="images/agents/1.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-4">
+				<h3>Programa una visita al inmueble</h3>
+				<h6>Dias y Horas disponibles:</h6>
+				<span>De Lunes a Sabado <br> Desde 8.00 a.m. hasta 5.00 p.m. </span>
+
+				
+			</div>
+			<div class="col-md-4">
+				<h3>Selecciona el Dia y la Hora</h3>
+				
+				<form>
+					<div class="form-row">
+						<div class="form-group col-6">
+							<label for="inputDate">Seleccione la fecha</label>
+							<input type="date" name="inputDate" class="form-control" id="inputDate">
+						</div>
+						<div class="form-group col-6">
+							<label for="inputTime">Y la Hora (08 a 17 hr)</label>
+							<input type="time" name="inputTime" class="form-control" id="inputTime" value="12.00.0000">
+						</div>
+
+
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea2">O escribelo</label>
+						<textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Escribe el dia y la hora ..."></textarea>
+					</div>	
+					<button type="submit" class="btn btn{lg btn-white text-primary">Enviar</button>
+					
+				</form>
+				
+				
+			</div>
+		</div>
+	</section><!-- agente -->
+	<!-- similares -->
+	<section class="container my-5">
+		<h2 class="text-center">Inmuebles similares</h2>
+		<div class="row sombra">
+			<div class="col-md-4">
+				<article  class=" card item sombra">
+					<div class="card-header text-center mb-0 pb-0">
+						<h5>Condominio Miraflores 2 piso mas</h5>
+					</div>
+					<div class="card-body py-0 px-0 ">						
+						<a href="detalle.html">
+							<img src="images/properties/p2.jpg" class="img-fluid ">
+						</a>
+						<h5 style="position: absolute; top: 222px; left:5px; color: white ;">
+							<span>Urb El Golf / Victor Larco</span>
+						</h5>
+						
+						<h5 class="" style="position: absolute; top: 92px;">
+							<span class="badge badge-dark">$25,000</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;									
+							<span class="badge badge-warning float-right">Departamento</span>
+						</h5>
+
+					</div>
+					<div class="card-footer d-flex justify-content-around">
+						<span> 5 <i class="fa fa-car" aria-hidden="true"></i></span>
+						<span>	2 <i class="fa fa-shower" aria-hidden="true"></i></span>
+						<span>2 <i class="fa fa-bed" aria-hidden="true"></i></span>
+						<a href="detalle.html">
+							<i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+						</a>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-4">
+				<article  class=" card item sombra">
+					<div class="card-header text-center mb-0 pb-0">
+						<h5>Condominio Miraflores 2 piso mas</h5>
+					</div>
+					<div class="card-body py-0 px-0 ">						
+						<a href="detalle.html">
+							<img src="images/properties/p2.jpg" class="img-fluid ">
+						</a>
+						<h5 style="position: absolute; top: 222px; left:5px; color: white ;">
+							<span>Urb El Golf / Victor Larco</span>
+						</h5>
+						
+						<h5 class="" style="position: absolute; top: 92px;">
+							<span class="badge badge-dark">$25,000</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;									
+							<span class="badge badge-warning float-right">Departamento</span>
+						</h5>
+
+					</div>
+					<div class="card-footer d-flex justify-content-around">
+						<span> 5 <i class="fa fa-car" aria-hidden="true"></i></span>
+						<span>	2 <i class="fa fa-shower" aria-hidden="true"></i></span>
+						<span>2 <i class="fa fa-bed" aria-hidden="true"></i></span>
+						<a href="detalle.html">
+							<i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+						</a>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-4">
+				<article  class=" card item sombra">
+					<div class="card-header text-center mb-0 pb-0">
+						<h5>Condominio Miraflores 2 piso mas</h5>
+					</div>
+					<div class="card-body py-0 px-0 ">						
+						<a href="detalle.html">
+							<img src="images/properties/p2.jpg" class="img-fluid ">
+						</a>
+						<h5 style="position: absolute; top: 222px; left:5px; color: white ;">
+							<span>Urb El Golf / Victor Larco</span>
+						</h5>
+						
+						<h5 class="" style="position: absolute; top: 92px;">
+							<span class="badge badge-dark">$25,000</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;									
+							<span class="badge badge-warning float-right">Departamento</span>
+						</h5>
+
+					</div>
+					<div class="card-footer d-flex justify-content-around">
+						<span> 5 <i class="fa fa-car" aria-hidden="true"></i></span>
+						<span>	2 <i class="fa fa-shower" aria-hidden="true"></i></span>
+						<span>2 <i class="fa fa-bed" aria-hidden="true"></i></span>
+						<a href="detalle.html">
+							<i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+						</a>
+					</div>
+				</article>
+			</div>
+		</div>
+		
+	</section><!-- similares -->
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="sliderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="images/properties/p1.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/properties/p2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/properties/p3.jpg" alt="Third slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var imagenes = [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5];
+		var galeria = document.getElementById('galeria');
+
+		for(imagen of imagenes){
+			galeria.innerHTML += `
+			<div class="card">
+			<a href="" data-toggle="modal" data-target="#id${imagen}">
+			<img src="images/properties/${imagen}.jpg" class="card-img-top">
+			</a>
+			</div>
+			</div>
+
+			<div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<img src="images/properties/${imagen}.jpg" class="img-fluid rounded">
+			</div>
+			</div>
+			`;
+		} 
+	</script>
+
+
+	<!-- slider-fotos -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/owlcarousel/dist/owl.carousel.min.js"></script>
+
+
+
+	<script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				loop:true,
+				margin:10,
+				dots:true,
+				nav:true,
+				navText: ['Anterior','Posterior'],
+				responsive:{
+					0:{
+						items:1
+					},
+					576:{
+						items:2
+					},
+					568:{
+						items:3
+					},
+					992:{
+						items:4
+					}
+				}
+			});
+		}); 
+
+	</script>
+
+
+</body>
+</html>
